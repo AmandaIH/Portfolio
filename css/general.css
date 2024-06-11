@@ -1,0 +1,370 @@
+body {
+  background-color: #f9efe0;
+}
+h1 {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #563239;
+  text-align: center;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #563239;
+}
+.h1_tema {
+  font-size: 100px;
+  color: #b3c8c6;
+}
+h3,
+h4,
+header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #563239;
+  background-color: #f9efe0;
+  display: flex;
+  justify-content: space-between;
+}
+p,
+footer {
+  font-family: "Artifika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+  padding-bottom: 2%;
+}
+
+.main_fp {
+  background-image: url(/portfolio/img/forside_bg.webp);
+  background-repeat: no-repeat;
+}
+header {
+  color: #f9efe0;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #563239;
+  text-decoration: none;
+}
+.navbar {
+  min-height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link,
+.nav-branding {
+  transition: 0.7s ease;
+}
+.nav-link:hover,
+.nav-branding:hover {
+  color: #62908b;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #62908b;
+}
+
+@media (max-width: 799px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f9efe0;
+    width: 50%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 10;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .cv {
+    margin-left: 1%;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.ommig_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f0ab9c;
+  border: none;
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  font-family: "Paytone One", sans-serif;
+  font-size: 36px;
+  padding-top: 2%;
+}
+.portfolio_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f0ab9c;
+  border: none;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font-family: "Paytone One", sans-serif;
+  font-size: 36px;
+}
+
+.om {
+  background-color: #f9efe0;
+  border: solid #f0ab9c;
+  height: 350px;
+  width: 400px;
+  padding: 1%;
+}
+
+@media (min-width: 800px) {
+  .cv {
+    margin-left: 10%;
+  }
+}
+.introduktion p {
+  font-family: "Artifika", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #5a3a2e;
+  line-height: 1.5;
+}
+
+.uddannelser,
+.arbejde {
+  height: 400px;
+  width: 350px;
+  padding-left: 5%;
+  background-color: #f0ab9c;
+}
+.arbejde {
+  height: 525px;
+  width: 350px;
+  padding-left: 5%;
+  background-color: #f0ab9c;
+}
+
+.udd_text,
+.arb_text {
+  font-family: "Artifika", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #5a3a2e;
+  line-height: 1.5;
+}
+
+.fed {
+  font-weight: 900;
+}
+.temaer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.h2_1 {
+  color: #563239;
+}
+
+.links_red {
+  background-color: #f9efe0;
+  border: 1px solid #563239;
+  height: 21px;
+  padding: 1%;
+}
+.links_blue {
+  background-color: #f9efe0;
+  border: 1px solid #b3c8c6;
+  padding: 1%;
+  color: #62908b;
+}
+.tema_billeder {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.tema1-button {
+  background-color: #563239;
+  color: #f9efe0;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Artifika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+button {
+  font-size: 16px;
+}
+.temaer p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.h2_2 {
+  color: #563239;
+}
+.tema2-button {
+  background-color: #563239;
+  color: #f9efe0;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Artifika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tema2-button.active {
+  background-color: #563239;
+}
+.tema2-content {
+  display: none;
+}
+.h2_3 {
+  color: #62908b;
+}
+.tema3-button {
+  background-color: #b3c8c6;
+  color: #5a3a2e;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Artifika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tema3-button.active {
+  background-color: #b3c8c6;
+}
+.tema3-content {
+  display: none;
+}
+.h2_4 {
+  color: #563239;
+}
+.tema4-button {
+  background-color: #563239;
+  color: #f9efe0;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Artifika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tema4-button.active {
+  background-color: #563239;
+}
+.tema4-content {
+  display: none;
+}
+.h2_5 {
+  color: #62908b;
+}
+.tema5-button {
+  background-color: #b3c8c6;
+  color: #5a3a2e;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Artifika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tema5-button.active {
+  background-color: #b3c8c6;
+}
+.tema5-content {
+  display: none;
+}
+.h2_5_2 {
+  color: #563239;
+}
+.tema5_2-button {
+  background-color: #563239;
+  color: #f9efe0;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Artifika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tema5_2-button.active {
+  background-color: #563239;
+}
+.tema5_2-content {
+  display: none;
+}
+footer {
+  background-color: #b3c8c6;
+  color: #563239;
+  padding: 2%;
+}
